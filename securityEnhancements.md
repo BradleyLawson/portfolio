@@ -53,5 +53,5 @@ Feel free to explore my work, and contact me for any inquiries on cloud security
 - **LinkedIn**: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
 
 ## **View More of My work**
-[![Go to Details](https://img.shields.io/badge/View-Details-blue?style=for-the-badge)](./automation.md)
+[![Go to Automation](https://img.shields.io/badge/Automation-blue?style=for-the-badge)](./automation.md)
 
