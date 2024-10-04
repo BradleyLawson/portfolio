@@ -147,8 +147,8 @@ Through these efforts, I have contributed to creating a robust security framewor
 
 ## Get in Touch
 
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
-- **LinkedIn**: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
+- **Email**: [bradleydlawson@outlook.com](mailto:bradleydlawson@outlook.com)
+- **LinkedIn**: [linkedin.com/in/brad-lawson](https://linkedin.com/in/brad-lawson)
 
 
 
@@ -159,7 +159,6 @@ Through these efforts, I have contributed to creating a robust security framewor
 [![Go to Documentation](https://img.shields.io/badge/Documentation-orange?style=for-the-badge)](./documentation.md) &nbsp;
 [![Go to Operations](https://img.shields.io/badge/Operations-purple?style=for-the-badge)](./operations.md) &nbsp;
 [![Go to Research](https://img.shields.io/badge/Research-red?style=for-the-badge)](./research.md) &nbsp;
-[![Go to Security](https://img.shields.io/badge/Security-black?style=for-the-badge)](./security.md) &nbsp;
 [![Go to Tagging](https://img.shields.io/badge/Tagging-yellow?style=for-the-badge)](./tagging.md) &nbsp;
 [![Go to Troubleshooting](https://img.shields.io/badge/Troubleshooting-pink?style=for-the-badge)](./troubleshooting.md)
 
