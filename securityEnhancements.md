@@ -51,3 +51,7 @@ Feel free to explore my work, and contact me for any inquiries on cloud security
 ## **Get in Touch**
 - **Email**: [your-email@example.com](mailto:your-email@example.com)
 - **LinkedIn**: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
+
+## **View More of My work**
+[![Go to Details](https://img.shields.io/badge/View-Details-blue?style=for-the-badge)](./automation.md)
+
