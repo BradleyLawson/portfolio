@@ -25,8 +25,7 @@ Managed Azure policies to enforce compliance and governance across cloud resourc
 #### 1. Audit Storage Accounts with External IP Addresses Attached
 - **Purpose**: To identify storage accounts that have external IP addresses attached, ensuring they are not publicly accessible unless required.
 - **Impact**: Enhanced visibility and compliance regarding the security posture of storage accounts.
-
-**Code:** [Audit Storage Accounts Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-Storage-External.tf)
+- **Code**: [Audit Storage Accounts Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-Storage-External.tf)
 
 ---
 
