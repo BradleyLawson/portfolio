@@ -1,4 +1,4 @@
-# **Cloud Security Portfolio**
+# **Cloud Security**
 
 Welcome to my portfolio! Below is a showcase of the work I’ve done to improve security within an Azure environment, focusing on policy governance, compliance, and security exception handling.
 
