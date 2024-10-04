@@ -40,8 +40,8 @@ Thank you for visiting my portfolio! Each section highlights specific skills and
 
 ## Get in Touch
 
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
-- **LinkedIn**: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- **Portfolio**: [yourwebsite.com](https://yourwebsite.com)
+- **Email**: [bradleydlawson@outlook.com](mailto:bradleydlawson@outllook.com)
+- **LinkedIn**: [linkedin.com/in/brad-lawson](https://linkedin.com/in/brad-lawsonn)
+- **Portfolio**: [bradleylawson.github.io/Resume/](https://bradleylawson.github.io/Resume/)
 
 ---
