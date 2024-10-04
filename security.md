@@ -25,61 +25,70 @@ Managed Azure policies to enforce compliance and governance across cloud resourc
 #### 1. Audit Storage Accounts with External IP Addresses Attached
 - **Purpose**: To identify storage accounts that have external IP addresses attached, ensuring they are not publicly accessible unless required.
 - **Impact**: Enhanced visibility and compliance regarding the security posture of storage accounts.
-- **Code**: [Audit Storage Accounts Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-Storage-External.tf)
+- **Code**: [Audit Storage Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-Storage-External.tf)
 
 ---
 
 #### 2. Audit Key Vaults with External IP Addresses Attached
 - **Purpose**: To monitor Key Vaults for external IP address access, ensuring sensitive data remains secure.
 - **Impact**: Improved security practices for accessing sensitive information stored in Key Vaults.
+- **Code**: [Audit KeyVault Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-KeyVault-External.tf
 
 ---
 
 #### 3. Audit Azure Database of PostgreSQL Flexible Servers with External IP Addresses Attached
 - **Purpose**: To check for external IP addresses on Azure Database for PostgreSQL Flexible Servers, reducing exposure to potential threats.
 - **Impact**: Strengthened security by limiting unnecessary external access to database resources.
+- **Code**: [Audit PostgreSql Flexible Servers Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-KeyVault-External.tf
 
 ---
 
 #### 4. Audit Azure Database for PostgreSQL Resources with External IP Addresses Attached
 - **Purpose**: To ensure that Azure Database for PostgreSQL resources are not publicly accessible without justification.
 - **Impact**: Enhanced compliance and security measures for database management.
+- **Code**: [Audit PostgreSql Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-KeyVault-External.tf
 
 ---
 
 #### 5. Deny Public Access to Managed Disks
 - **Purpose**: To prevent public access to managed disks, ensuring data confidentiality and integrity.
 - **Impact**: Significantly reduced the risk of data exposure through public access.
+- **Code**: [Deny Managed Disks Public Access Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-KeyVault-External.tf
 
 ---
 
 #### 6. Deny Public Access to Snapshots
 - **Purpose**: To enforce restrictions on public access to snapshots, maintaining data privacy.
 - **Impact**: Protected sensitive information stored in snapshots from unauthorized access.
+- **Code**: [Deny Snapshots Public Access Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-KeyVault-External.tf
 
 ---
 
 #### 7. Deny NSG Rules Outside of Approved List
 - **Purpose**: To ensure that only pre-approved Network Security Group (NSG) rules are applied, maintaining a consistent security posture.
 - **Impact**: Improved network security by limiting the creation of non-compliant rules.
+- **Code**: [Deny Unapproved NSG Access Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-KeyVault-External.tf
 
 ---
 
 #### 8. Deny Service Bus Resources with Less Than Minimum TLS Version
 - **Purpose**: To ensure that all Service Bus resources utilize a minimum TLS version for secure communication.
 - **Impact**: Strengthened security for data in transit by enforcing modern encryption standards.
+- **Code**: [Deny Service Bus Minimum TLS Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-KeyVault-External.tf
 
 ---
 
 #### 9. Deploy Private DNS Zone for Cognitive Services and OpenAI
 - **Purpose**: To automate the deployment of a private DNS zone for secure communication with Cognitive Services and OpenAI resources.
 - **Impact**: Enhanced security through isolation of DNS resolution for sensitive services.
+- **Code**: [Deploy Private DNS Zoone for Coginite Services Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-KeyVault-External.tf
 
 ---
 
 #### 10. Deny Event Grid Resources with Less Than Minimum TLS Version
 - **Purpose**: To enforce the use of minimum TLS version on Event Grid resources to ensure secure event transmission.
 - **Impact**: Improved security measures for event-driven architectures.
+- **Code**: [Deny Event Grid Minimum TLS Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-KeyVault-External.tf
 
 ---
 
