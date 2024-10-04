@@ -7,16 +7,17 @@ This document outlines my contributions to security within Azure environments, f
 ## Azure Policy
 
 ### Overview
-Managed Azure policies to enforce compliance and governance across cloud resources.
+Managed Azure policies to enforce compliance and governance across cloud resources. Through these Azure Policies, I have contributed to creating a more secure posture within Azure, ensuring compliance and safeguarding the organization's assets. Each policy plays a crucial role in maintaining security standards and protecting sensitive resources.
 
 ### Key Contributions
-- Developed and implemented Azure Policies to ensure compliance across multiple subscriptions and resources.
+- Developed and implemented Azure Policies to ensure compliance across multiple management groups, subscriptions and resources.
 - Created custom policies tailored to specific organizational needs.
 - Monitored compliance and automated the remediation of non-compliant resources.
 
 ### Impact
 - Improved governance and security posture across the organization.
 - Ensured that cloud resources adhered to regulatory and security standards.
+- Worked with a team to increase security compliance over 80%. 
 
 ---
 
@@ -92,12 +93,6 @@ Managed Azure policies to enforce compliance and governance across cloud resourc
 
 ---
 
-## Conclusion
-
-Through these Azure Policies, I have contributed to creating a robust security framework within Azure, ensuring compliance and safeguarding the organization's assets. Each policy plays a crucial role in maintaining security standards and protecting sensitive resources.
-
----
-
 ## Security Compliance and Remediation
 
 ### Overview
@@ -116,11 +111,12 @@ Addressed compliance issues and enforced security standards through proactive re
 ## Security Exception Handling
 
 ### Overview
-Managed security exemptions to meet specific compliance requirements without compromising security.
+Managed security exemptions to meet specific compliance requirements without compromising security for integral business solutions.
 
 ### Key Contributions
 - Reviewed and assessed requests for security exemptions, ensuring alignment with compliance needs.
 - Applied appropriate exceptions while maintaining the overall security posture of the organization.
+- Ensured business continuity on the resources essential for functionality while still maintaining secure practices.
 
 ### Impact
 - Successfully navigated compliance flexibility while upholding stringent security measures.
@@ -134,8 +130,8 @@ Managed security exemptions to meet specific compliance requirements without com
 Integrated virtual machines with Microsoft Defender for Endpoint to enhance security and threat protection.
 
 ### Key Contributions
-- Configured and deployed endpoint security policies across all virtual machines.
-- Monitored and addressed potential vulnerabilities through the Defender threat protection suite.
+- Researched VMs not currently empowerd with Microsoft Defender for Endpoint 
+- Worked with Product owners to assist in Onboarding the Defender solution.
 
 ### Impact
 - Strengthened the organization’s defense against cyber threats.
