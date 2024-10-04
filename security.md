@@ -152,6 +152,40 @@ Through these efforts, I have contributed to creating a robust security framewor
 
 
 
-## **View More of My work**
+## **View More of My Work**
+
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+
 [![Go to Automation](https://img.shields.io/badge/Automation-blue?style=for-the-badge)](./automation.md)
+
+&nbsp;&nbsp;
+
+[![Go to Collaboration](https://img.shields.io/badge/Collaboration-green?style=for-the-badge)](./collaboration.md)
+
+&nbsp;&nbsp;
+
+[![Go to Documentation](https://img.shields.io/badge/Documentation-orange?style=for-the-badge)](./documentation.md)
+
+&nbsp;&nbsp;
+
+[![Go to Operations](https://img.shields.io/badge/Operations-purple?style=for-the-badge)](./operations.md)
+
+&nbsp;&nbsp;
+
+[![Go to Research](https://img.shields.io/badge/Research-red?style=for-the-badge)](./research.md)
+
+&nbsp;&nbsp;
+
+[![Go to Security](https://img.shields.io/badge/Security-black?style=for-the-badge)](./security.md)
+
+&nbsp;&nbsp;
+
+[![Go to Tagging](https://img.shields.io/badge/Tagging-yellow?style=for-the-badge)](./tagging.md)
+
+&nbsp;&nbsp;
+
+[![Go to Troubleshooting](https://img.shields.io/badge/Troubleshooting-pink?style=for-the-badge)](./troubleshooting.md)
+
+</div>
+
 
