@@ -1,147 +1,54 @@
-# Security in Azure
+# **Technical Documentation**
 
-This document outlines my contributions to security within Azure environments, focusing on governance, compliance, and enhanced protection strategies.
+Creating clear and comprehensive technical documentation has been an integral part of my work as a Cloud Engineer. I have contributed to the creation and maintenance of various types of documentation, aimed at ensuring technical accuracy, enhancing collaboration, and improving the overall efficiency of cloud operations.
 
----
+## **Types of Documentation Created**
 
-## Azure Policy
+Throughout my career, I have authored and contributed to a range of documentation, ensuring that technical processes, configurations, and best practices are easily understood and accessible to teams across the organization.
 
-### Overview
-Managed Azure policies to enforce compliance and governance across cloud resources. Through these Azure Policies, I have contributed to creating a more secure posture within Azure, ensuring compliance and safeguarding the organization's assets. Each policy plays a crucial role in maintaining security standards and protecting sensitive resources.
+### Key Areas of Documentation:
+1. **Infrastructure as Code (IaC) Documentation**
+    - Documented Terraform codebases and scripts, detailing configurations for cloud infrastructure.
+    - Created step-by-step guides for deploying resources via Terraform and other IaC tools to ensure consistent and repeatable deployments.
+  
+2. **Cloud Architecture Diagrams**
+    - Developed cloud architecture diagrams to visually represent system designs and infrastructure layouts.
+    - Collaborated with development and architecture teams to ensure diagrams reflected both high-level architecture and detailed configurations.
 
-### Key Contributions
-- Developed and implemented Azure Policies to ensure compliance across multiple management groups, subscriptions and resources.
-- Created custom policies tailored to specific organizational needs.
-- Monitored compliance and automated the remediation of non-compliant resources.
+3. **Security Policies and Standards**
+    - Drafted and maintained documentation for security policies and procedures, helping teams align with compliance and security best practices.
+    - Authored guidelines for secure configurations, access management, and encryption practices across cloud resources.
 
-### Impact
-- Improved governance and security posture across the organization.
-- Ensured that cloud resources adhered to regulatory and security standards.
-- Worked with a team to increase security compliance over 80%. 
+4. **Operational Runbooks**
+    - Created detailed runbooks for operational tasks, enabling smooth handovers and ensuring teams could easily manage cloud resources.
+    - Included troubleshooting steps, performance monitoring tips, and instructions for scaling cloud infrastructure.
 
----
+5. **API and Automation Guides**
+    - Authored documentation for APIs, automation scripts, and integration points between different systems and cloud services.
+    - Provided detailed examples and use cases to help developers and teams quickly adopt automated workflows.
 
-### Policies Developed
+## **Collaboration in Documentation**
 
-#### 1. Audit Storage Accounts with External IP Addresses Attached
-- **Purpose**: To identify storage accounts that have external IP addresses attached, ensuring they are not publicly accessible unless required.
-- **Impact**: Enhanced visibility and compliance regarding the security posture of storage accounts.
-- **Code**: [Audit Storage Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-Storage-External.tf)
+Effective documentation often requires collaboration with various stakeholders. I have worked closely with cross-functional teams to ensure the accuracy and clarity of documentation, facilitating smooth communication across departments.
 
----
+### Collaboration Highlights:
+- **Working with Developers**: Collaborated with development teams to ensure technical documentation accurately reflected current systems, configurations, and best practices.
+- **Cross-Departmental Reviews**: Conducted reviews and feedback sessions with operations, security, and compliance teams to refine and improve documentation.
+- **Stakeholder Engagement**: Ensured that documentation was not only technical but also aligned with business requirements by working closely with project managers and business stakeholders.
 
-#### 2. Audit Key Vaults with External IP Addresses Attached
-- **Purpose**: To monitor Key Vaults for external IP address access, ensuring sensitive data remains secure.
-- **Impact**: Improved security practices for accessing sensitive information stored in Key Vaults.
-- **Code**: [Audit KeyVault Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-KeyVault-External.tf)
+## **Maintaining and Updating Documentation**
 
----
+Documentation is a living entity that requires constant updates to stay relevant and effective. I have been proactive in regularly reviewing and updating documentation to ensure it reflects the latest changes in cloud environments and technologies.
 
-#### 3. Audit Azure Database of PostgreSQL Flexible Servers with External IP Addresses Attached
-- **Purpose**: To check for external IP addresses on Azure Database for PostgreSQL Flexible Servers, reducing exposure to potential threats.
-- **Impact**: Strengthened security by limiting unnecessary external access to database resources.
-- **Code**: [Audit PostgreSql Flexible Servers Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-PostgresqlFlexible-External.tf)
+### Ongoing Efforts:
+- **Version Control**: Used version control systems (such as Git) to maintain and track changes to documentation, ensuring a clear history of revisions.
+- **Continuous Improvement**: Regularly updated documents based on new deployments, updates in cloud services, or changes in organizational priorities.
+- **Training and Onboarding Materials**: Developed onboarding guides and training materials based on up-to-date documentation, helping new team members quickly get acclimated to the cloud infrastructure and processes.
 
----
+## **Conclusion**
 
-#### 4. Audit Azure Database for PostgreSQL Resources with External IP Addresses Attached
-- **Purpose**: To ensure that Azure Database for PostgreSQL resources are not publicly accessible without justification.
-- **Impact**: Enhanced compliance and security measures for database management.
-- **Code**: [Audit PostgreSql Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-Postgresql-External.tf)
+Through the creation and maintenance of technical documentation, I have contributed to building a knowledge base that empowers teams to operate efficiently and effectively within the cloud. My documentation efforts have not only improved operational processes but also fostered better communication and collaboration across the organization.
 
----
-
-#### 5. Deny Public Access to Managed Disks
-- **Purpose**: To prevent public access to managed disks, ensuring data confidentiality and integrity.
-- **Impact**: Significantly reduced the risk of data exposure through public access.
-- **Code**: [Deny Managed Disks Public Access Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Deny-External-ManagedDisks.tf)
-
----
-
-#### 6. Deny Public Access to Snapshots
-- **Purpose**: To enforce restrictions on public access to snapshots, maintaining data privacy.
-- **Impact**: Protected sensitive information stored in snapshots from unauthorized access.
-- **Code**: [Deny Snapshots Public Access Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Deny-External-Snapshots.tf)
-
----
-
-#### 7. Deny NSG Rules Outside of Approved List
-- **Purpose**: To ensure that only pre-approved Network Security Group (NSG) rules are applied, maintaining a consistent security posture.
-- **Impact**: Improved network security by limiting the creation of non-compliant rules.
-- **Code**: [Deny Unapproved NSG Access Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Deny-Unapproved-NSGs.tf)
-
----
-
-#### 8. Deny Service Bus Resources with Less Than Minimum TLS Version
-- **Purpose**: To ensure that all Service Bus resources utilize a minimum TLS version for secure communication.
-- **Impact**: Strengthened security for data in transit by enforcing modern encryption standards.
-- **Code**: [Deny Service Bus Minimum TLS Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Deny-ServiceBus-TLS.tf)
-
----
-
-#### 9. Deploy Private DNS Zone for Cognitive Services and OpenAI
-- **Purpose**: To automate the deployment of a private DNS zone for secure communication with Cognitive Services and OpenAI resources.
-- **Impact**: Enhanced security through isolation of DNS resolution for sensitive services.
-- **Code**: [Deploy Private DNS Zoone for Coginite Services Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Deploy-PrivateDNS-OpenAi.tf)
-
----
-
-#### 10. Deny Event Grid Resources with Less Than Minimum TLS Version
-- **Purpose**: To enforce the use of minimum TLS version on Event Grid resources to ensure secure event transmission.
-- **Impact**: Improved security measures for event-driven architectures.
-- **Code**: [Deny Event Grid Minimum TLS Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Deny-EventGrid-TLS.tf)
-
----
-
-## Security Compliance and Remediation
-
-### Overview
-Addressed compliance issues and enforced security standards through proactive remediation.
-
-### Key Contributions
-- Identified non-compliant resources and applied upgrades to bring them in line with security standards.
-- Updated Azure Policies and performed infrastructure changes to resolve compliance issues.
-
-### Impact
-- Maintained continuous compliance with evolving industry standards and organizational policies.
-- Enhanced the security posture of cloud resources, reducing potential vulnerabilities.
-
----
-
-## Security Exception Handling
-
-### Overview
-Managed security exemptions to meet specific compliance requirements without compromising security for integral business solutions.
-
-### Key Contributions
-- Reviewed and assessed requests for security exemptions, ensuring alignment with compliance needs.
-- Applied appropriate exceptions while maintaining the overall security posture of the organization.
-- Ensured business continuity on the resources essential for functionality while still maintaining secure practices.
-
-### Impact
-- Successfully navigated compliance flexibility while upholding stringent security measures.
-- Reduced the risk of non-compliance while allowing for necessary operational adjustments.
-
----
-
-## Onboard VMs to Microsoft Defender for Endpoint
-
-### Overview
-Integrated virtual machines with Microsoft Defender for Endpoint to enhance security and threat protection.
-
-### Key Contributions
-- Researched VMs not currently empowerd with Microsoft Defender for Endpoint 
-- Worked with Product owners to assist in Onboarding the Defender solution.
-
-### Impact
-- Strengthened the organization’s defense against cyber threats.
-- Improved visibility and response capabilities regarding potential security incidents.
-
----
-
-## Conclusion
-
-Through these efforts, I have contributed to creating a robust security framework within Azure, ensuring compliance and safeguarding the organization's assets. Each section outlines specific contributions and their impact on overall security and compliance.
 
 ---
 
