@@ -1,147 +1,62 @@
-# Security in Azure
+# **Tagging**
 
-This document outlines my contributions to security within Azure environments, focusing on governance, compliance, and enhanced protection strategies.
+Effective resource tagging is crucial for organizing, managing, and optimizing cloud environments. As a Cloud Engineer, I have been involved in developing and refining tagging strategies to improve resource management, cost allocation, and security governance across cloud infrastructures.
 
----
+## **Importance of Tagging in Cloud Environments**
 
-## Azure Policy
+Tagging allows for better organization of cloud resources by applying metadata that makes resources easier to track, manage, and allocate. I have worked to ensure that cloud resources are appropriately tagged, adhering to best practices that align with both technical and business requirements.
 
-### Overview
-Managed Azure policies to enforce compliance and governance across cloud resources. Through these Azure Policies, I have contributed to creating a more secure posture within Azure, ensuring compliance and safeguarding the organization's assets. Each policy plays a crucial role in maintaining security standards and protecting sensitive resources.
+### Key Benefits of Cloud Tagging:
+1. **Resource Management**: Tags allow for easier identification and grouping of resources, making it simpler to manage large-scale cloud environments.
+2. **Cost Allocation**: By applying cost-related tags, I enabled more accurate cost tracking and allocation across different departments, projects, or teams.
+3. **Security and Compliance**: Tags have been used to ensure that security policies are enforced across resources, such as identifying resources that need encryption or backup based on their tags.
 
-### Key Contributions
-- Developed and implemented Azure Policies to ensure compliance across multiple management groups, subscriptions and resources.
-- Created custom policies tailored to specific organizational needs.
-- Monitored compliance and automated the remediation of non-compliant resources.
+## **Tagging Policy Creation and Enforcement**
 
-### Impact
-- Improved governance and security posture across the organization.
-- Ensured that cloud resources adhered to regulatory and security standards.
-- Worked with a team to increase security compliance over 80%. 
+To ensure consistency and effectiveness, I helped define and implement tagging policies that aligned with organizational goals. These policies were enforced across the cloud environment using automated tools and governance frameworks.
 
----
+### Tagging Policy Highlights:
+1. **Tagging Standards Development**
+    - Established standard naming conventions and required tags (such as `Environment`, `Owner`, `Cost Center`, and `Project`) to ensure consistency across resources.
+    - Collaborated with stakeholders to define key tags that support operational and financial reporting needs.
+  
+2. **Automated Tagging Enforcement**
+    - Implemented automation scripts and Azure Policies to enforce tagging rules, ensuring that all new resources were tagged properly upon creation.
+    - Set up governance alerts to identify untagged or improperly tagged resources for remediation.
 
-### Policies Developed
+3. **Tagging for Security and Compliance**
+    - Created tags that applied specific security controls to resources, such as enforcing encryption or backup policies based on tag values.
+    - Used tagging to identify resources subject to compliance requirements, ensuring they were subject to appropriate audits and reviews.
 
-#### 1. Audit Storage Accounts with External IP Addresses Attached
-- **Purpose**: To identify storage accounts that have external IP addresses attached, ensuring they are not publicly accessible unless required.
-- **Impact**: Enhanced visibility and compliance regarding the security posture of storage accounts.
-- **Code**: [Audit Storage Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-Storage-External.tf)
+## **Improving Tagging Practices Over Time**
 
----
+Tagging practices must evolve to keep up with changes in the cloud environment and business needs. I have been proactive in reviewing and updating tagging strategies to ensure they continue to serve organizational goals.
 
-#### 2. Audit Key Vaults with External IP Addresses Attached
-- **Purpose**: To monitor Key Vaults for external IP address access, ensuring sensitive data remains secure.
-- **Impact**: Improved security practices for accessing sensitive information stored in Key Vaults.
-- **Code**: [Audit KeyVault Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-KeyVault-External.tf)
+### Key Improvements:
+1. **Tagging for Cost Optimization**
+    - Introduced new cost-related tags to better track and optimize cloud spending, such as tags for reserved instances and scaling policies.
+    - Collaborated with finance teams to adjust tagging for more detailed cost reporting, enabling granular insights into cloud spend.
 
----
+2. **Tagging for Automation and CI/CD Pipelines**
+    - Worked with development teams to integrate tagging practices into CI/CD pipelines, ensuring that resources deployed automatically were properly tagged.
+    - Used tags to automate processes such as scaling, monitoring, and backups based on resource usage patterns.
 
-#### 3. Audit Azure Database of PostgreSQL Flexible Servers with External IP Addresses Attached
-- **Purpose**: To check for external IP addresses on Azure Database for PostgreSQL Flexible Servers, reducing exposure to potential threats.
-- **Impact**: Strengthened security by limiting unnecessary external access to database resources.
-- **Code**: [Audit PostgreSql Flexible Servers Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-PostgresqlFlexible-External.tf)
+3. **Tag Audits and Remediation**
+    - Regularly audited the tagging landscape to identify resources missing required tags or using outdated tags, ensuring compliance with updated policies.
+    - Developed scripts to automate the remediation of untagged resources, applying the correct tags based on resource metadata.
 
----
+## **Collaboration in Tagging Initiatives**
 
-#### 4. Audit Azure Database for PostgreSQL Resources with External IP Addresses Attached
-- **Purpose**: To ensure that Azure Database for PostgreSQL resources are not publicly accessible without justification.
-- **Impact**: Enhanced compliance and security measures for database management.
-- **Code**: [Audit PostgreSql Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-Postgresql-External.tf)
+Improving tagging strategies required close collaboration with different teams and departments, including development, finance, and security, to ensure that tagging met the needs of all stakeholders.
 
----
+### Collaboration Highlights:
+- **Finance Teams**: Worked closely with finance teams to define cost-related tags that enabled more accurate tracking and reporting of cloud expenditures.
+- **Development Teams**: Partnered with development teams to integrate tagging standards into deployment processes, ensuring that all resources, even those created automatically, adhered to tagging policies.
+- **Security and Compliance Teams**: Collaborated with security teams to ensure that tagging policies supported security governance and compliance auditing.
 
-#### 5. Deny Public Access to Managed Disks
-- **Purpose**: To prevent public access to managed disks, ensuring data confidentiality and integrity.
-- **Impact**: Significantly reduced the risk of data exposure through public access.
-- **Code**: [Deny Managed Disks Public Access Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Deny-External-ManagedDisks.tf)
+## **Conclusion**
 
----
-
-#### 6. Deny Public Access to Snapshots
-- **Purpose**: To enforce restrictions on public access to snapshots, maintaining data privacy.
-- **Impact**: Protected sensitive information stored in snapshots from unauthorized access.
-- **Code**: [Deny Snapshots Public Access Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Deny-External-Snapshots.tf)
-
----
-
-#### 7. Deny NSG Rules Outside of Approved List
-- **Purpose**: To ensure that only pre-approved Network Security Group (NSG) rules are applied, maintaining a consistent security posture.
-- **Impact**: Improved network security by limiting the creation of non-compliant rules.
-- **Code**: [Deny Unapproved NSG Access Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Deny-Unapproved-NSGs.tf)
-
----
-
-#### 8. Deny Service Bus Resources with Less Than Minimum TLS Version
-- **Purpose**: To ensure that all Service Bus resources utilize a minimum TLS version for secure communication.
-- **Impact**: Strengthened security for data in transit by enforcing modern encryption standards.
-- **Code**: [Deny Service Bus Minimum TLS Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Deny-ServiceBus-TLS.tf)
-
----
-
-#### 9. Deploy Private DNS Zone for Cognitive Services and OpenAI
-- **Purpose**: To automate the deployment of a private DNS zone for secure communication with Cognitive Services and OpenAI resources.
-- **Impact**: Enhanced security through isolation of DNS resolution for sensitive services.
-- **Code**: [Deploy Private DNS Zoone for Coginite Services Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Deploy-PrivateDNS-OpenAi.tf)
-
----
-
-#### 10. Deny Event Grid Resources with Less Than Minimum TLS Version
-- **Purpose**: To enforce the use of minimum TLS version on Event Grid resources to ensure secure event transmission.
-- **Impact**: Improved security measures for event-driven architectures.
-- **Code**: [Deny Event Grid Minimum TLS Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Deny-EventGrid-TLS.tf)
-
----
-
-## Security Compliance and Remediation
-
-### Overview
-Addressed compliance issues and enforced security standards through proactive remediation.
-
-### Key Contributions
-- Identified non-compliant resources and applied upgrades to bring them in line with security standards.
-- Updated Azure Policies and performed infrastructure changes to resolve compliance issues.
-
-### Impact
-- Maintained continuous compliance with evolving industry standards and organizational policies.
-- Enhanced the security posture of cloud resources, reducing potential vulnerabilities.
-
----
-
-## Security Exception Handling
-
-### Overview
-Managed security exemptions to meet specific compliance requirements without compromising security for integral business solutions.
-
-### Key Contributions
-- Reviewed and assessed requests for security exemptions, ensuring alignment with compliance needs.
-- Applied appropriate exceptions while maintaining the overall security posture of the organization.
-- Ensured business continuity on the resources essential for functionality while still maintaining secure practices.
-
-### Impact
-- Successfully navigated compliance flexibility while upholding stringent security measures.
-- Reduced the risk of non-compliance while allowing for necessary operational adjustments.
-
----
-
-## Onboard VMs to Microsoft Defender for Endpoint
-
-### Overview
-Integrated virtual machines with Microsoft Defender for Endpoint to enhance security and threat protection.
-
-### Key Contributions
-- Researched VMs not currently empowerd with Microsoft Defender for Endpoint 
-- Worked with Product owners to assist in Onboarding the Defender solution.
-
-### Impact
-- Strengthened the organization’s defense against cyber threats.
-- Improved visibility and response capabilities regarding potential security incidents.
-
----
-
-## Conclusion
-
-Through these efforts, I have contributed to creating a robust security framework within Azure, ensuring compliance and safeguarding the organization's assets. Each section outlines specific contributions and their impact on overall security and compliance.
+By refining and enforcing tagging strategies, I have helped organizations manage cloud environments more efficiently, optimize costs, and ensure compliance with security standards. Effective tagging is a cornerstone of cloud resource management, and my efforts in this area have provided tangible benefits across cloud operations.
 
 ---
 
@@ -149,7 +64,9 @@ Through these efforts, I have contributed to creating a robust security framewor
 
 - **Email**: [bradleydlawson@outlook.com](mailto:bradleydlawson@outlook.com)
 - **LinkedIn**: [linkedin.com/in/brad-lawson](https://linkedin.com/in/brad-lawson)
+- **Portfolio**: [bradleylawson.github.io/Resume/](https://bradleylawson.github.io/Resume/)
 
+---
 
 
 ## **View More of My Work**

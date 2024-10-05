@@ -23,7 +23,9 @@ Through this effort I was able to help streamline what was once a tedious, time-
 
 - **Email**: [bradleydlawson@outlook.com](mailto:bradleydlawson@outlook.com)
 - **LinkedIn**: [linkedin.com/in/brad-lawson](https://linkedin.com/in/brad-lawson)
+- **Portfolio**: [bradleylawson.github.io/Resume/](https://bradleylawson.github.io/Resume/)
 
+---
 
 
 ## **View More of My Work**

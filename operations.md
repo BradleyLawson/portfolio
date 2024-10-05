@@ -1,147 +1,61 @@
-# Security in Azure
+# **Operations**
 
-This document outlines my contributions to security within Azure environments, focusing on governance, compliance, and enhanced protection strategies.
+As a Cloud Engineer, I have played a key role in managing and optimizing cloud operations to ensure seamless service delivery, scalability, and cost efficiency. My work in operations spans across various aspects of cloud infrastructure management, from monitoring and performance tuning to incident management and automation.
 
----
+## **Cloud Infrastructure Management**
 
-## Azure Policy
+I have been responsible for managing cloud environments, ensuring that resources are properly provisioned, configured, and optimized for performance. This work includes:
 
-### Overview
-Managed Azure policies to enforce compliance and governance across cloud resources. Through these Azure Policies, I have contributed to creating a more secure posture within Azure, ensuring compliance and safeguarding the organization's assets. Each policy plays a crucial role in maintaining security standards and protecting sensitive resources.
+### Key Operations:
+1. **Provisioning and Resource Management**
+    - Deployed and managed cloud infrastructure resources including virtual machines, storage accounts, networking components, and databases.
+    - Used Infrastructure as Code (IaC) tools like Terraform to automate resource provisioning and ensure consistency across environments.
 
-### Key Contributions
-- Developed and implemented Azure Policies to ensure compliance across multiple management groups, subscriptions and resources.
-- Created custom policies tailored to specific organizational needs.
-- Monitored compliance and automated the remediation of non-compliant resources.
+2. **Performance Monitoring and Tuning**
+    - Implemented monitoring tools (such as Azure Monitor and Application Insights) to track performance metrics, identify bottlenecks, and optimize cloud resources.
+    - Regularly tuned resources to balance cost and performance, scaling up or down based on real-time usage data.
 
-### Impact
-- Improved governance and security posture across the organization.
-- Ensured that cloud resources adhered to regulatory and security standards.
-- Worked with a team to increase security compliance over 80%. 
+3. **Cost Optimization**
+    - Analyzed cloud usage and identified opportunities for cost optimization by rightsizing resources, implementing automation to shut down unused resources, and utilizing reserved instances where applicable.
+    - Worked with finance teams to forecast cloud costs and align cloud spend with business needs.
 
----
+## **Incident Management and Troubleshooting**
 
-### Policies Developed
+Ensuring the stability and reliability of cloud environments requires effective incident management and troubleshooting strategies. I have played a key role in resolving incidents quickly and minimizing downtime.
 
-#### 1. Audit Storage Accounts with External IP Addresses Attached
-- **Purpose**: To identify storage accounts that have external IP addresses attached, ensuring they are not publicly accessible unless required.
-- **Impact**: Enhanced visibility and compliance regarding the security posture of storage accounts.
-- **Code**: [Audit Storage Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-Storage-External.tf)
+### Incident Management Strategies:
+- **Proactive Monitoring**: Set up automated alerts for resource outages, high CPU utilization, and other anomalies to ensure quick detection of potential issues.
+- **Root Cause Analysis**: Used diagnostic tools to investigate incidents, determine root causes, and implement permanent fixes to prevent future occurrences.
+- **Disaster Recovery Planning**: Assisted in developing and maintaining disaster recovery (DR) plans, ensuring that critical systems are backed up and recoverable in the event of failure.
 
----
+## **Automation of Cloud Operations**
 
-#### 2. Audit Key Vaults with External IP Addresses Attached
-- **Purpose**: To monitor Key Vaults for external IP address access, ensuring sensitive data remains secure.
-- **Impact**: Improved security practices for accessing sensitive information stored in Key Vaults.
-- **Code**: [Audit KeyVault Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-KeyVault-External.tf)
+Automation has been a cornerstone of my approach to cloud operations, allowing for greater efficiency, fewer errors, and more consistent management of cloud resources.
 
----
+### Key Automation Efforts:
+1. **Infrastructure as Code (IaC)**
+    - Automated the deployment of cloud resources using Terraform, ensuring consistent configurations across multiple environments (development, testing, production).
+    - Created reusable modules to standardize the setup of infrastructure components like virtual networks, load balancers, and storage.
 
-#### 3. Audit Azure Database of PostgreSQL Flexible Servers with External IP Addresses Attached
-- **Purpose**: To check for external IP addresses on Azure Database for PostgreSQL Flexible Servers, reducing exposure to potential threats.
-- **Impact**: Strengthened security by limiting unnecessary external access to database resources.
-- **Code**: [Audit PostgreSql Flexible Servers Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-PostgresqlFlexible-External.tf)
+2. **Automated Scaling and Resource Management**
+    - Implemented auto-scaling policies to dynamically adjust the number of resources based on traffic patterns, ensuring high availability and optimized costs.
+    - Used automation scripts and workflows to manage routine tasks such as backups, security patching, and system updates.
 
----
+3. **CI/CD Pipeline Integration**
+    - Collaborated with DevOps teams to integrate automated infrastructure deployment into CI/CD pipelines, ensuring that infrastructure changes are tested and deployed alongside application code.
 
-#### 4. Audit Azure Database for PostgreSQL Resources with External IP Addresses Attached
-- **Purpose**: To ensure that Azure Database for PostgreSQL resources are not publicly accessible without justification.
-- **Impact**: Enhanced compliance and security measures for database management.
-- **Code**: [Audit PostgreSql Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Audit-Postgresql-External.tf)
+## **Collaboration in Operations**
 
----
+Collaboration has been key to successful cloud operations, involving close work with development, security, and support teams to ensure all aspects of the cloud environment are functioning optimally.
 
-#### 5. Deny Public Access to Managed Disks
-- **Purpose**: To prevent public access to managed disks, ensuring data confidentiality and integrity.
-- **Impact**: Significantly reduced the risk of data exposure through public access.
-- **Code**: [Deny Managed Disks Public Access Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Deny-External-ManagedDisks.tf)
+### Collaboration Highlights:
+- **Security Teams**: Worked closely with security teams to implement operational best practices such as regular vulnerability assessments, security patches, and auditing.
+- **Development Teams**: Collaborated with developers to ensure that the cloud infrastructure is aligned with the needs of applications, enabling smooth deployments and minimal downtime.
+- **Support Teams**: Coordinated with support teams during incidents, providing insights into infrastructure-related issues and working together to resolve them promptly.
 
----
+## **Conclusion**
 
-#### 6. Deny Public Access to Snapshots
-- **Purpose**: To enforce restrictions on public access to snapshots, maintaining data privacy.
-- **Impact**: Protected sensitive information stored in snapshots from unauthorized access.
-- **Code**: [Deny Snapshots Public Access Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Deny-External-Snapshots.tf)
-
----
-
-#### 7. Deny NSG Rules Outside of Approved List
-- **Purpose**: To ensure that only pre-approved Network Security Group (NSG) rules are applied, maintaining a consistent security posture.
-- **Impact**: Improved network security by limiting the creation of non-compliant rules.
-- **Code**: [Deny Unapproved NSG Access Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Deny-Unapproved-NSGs.tf)
-
----
-
-#### 8. Deny Service Bus Resources with Less Than Minimum TLS Version
-- **Purpose**: To ensure that all Service Bus resources utilize a minimum TLS version for secure communication.
-- **Impact**: Strengthened security for data in transit by enforcing modern encryption standards.
-- **Code**: [Deny Service Bus Minimum TLS Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Deny-ServiceBus-TLS.tf)
-
----
-
-#### 9. Deploy Private DNS Zone for Cognitive Services and OpenAI
-- **Purpose**: To automate the deployment of a private DNS zone for secure communication with Cognitive Services and OpenAI resources.
-- **Impact**: Enhanced security through isolation of DNS resolution for sensitive services.
-- **Code**: [Deploy Private DNS Zoone for Coginite Services Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Deploy-PrivateDNS-OpenAi.tf)
-
----
-
-#### 10. Deny Event Grid Resources with Less Than Minimum TLS Version
-- **Purpose**: To enforce the use of minimum TLS version on Event Grid resources to ensure secure event transmission.
-- **Impact**: Improved security measures for event-driven architectures.
-- **Code**: [Deny Event Grid Minimum TLS Policy](https://github.com/BradleyLawson/azure-policy/blob/main/Deny-EventGrid-TLS.tf)
-
----
-
-## Security Compliance and Remediation
-
-### Overview
-Addressed compliance issues and enforced security standards through proactive remediation.
-
-### Key Contributions
-- Identified non-compliant resources and applied upgrades to bring them in line with security standards.
-- Updated Azure Policies and performed infrastructure changes to resolve compliance issues.
-
-### Impact
-- Maintained continuous compliance with evolving industry standards and organizational policies.
-- Enhanced the security posture of cloud resources, reducing potential vulnerabilities.
-
----
-
-## Security Exception Handling
-
-### Overview
-Managed security exemptions to meet specific compliance requirements without compromising security for integral business solutions.
-
-### Key Contributions
-- Reviewed and assessed requests for security exemptions, ensuring alignment with compliance needs.
-- Applied appropriate exceptions while maintaining the overall security posture of the organization.
-- Ensured business continuity on the resources essential for functionality while still maintaining secure practices.
-
-### Impact
-- Successfully navigated compliance flexibility while upholding stringent security measures.
-- Reduced the risk of non-compliance while allowing for necessary operational adjustments.
-
----
-
-## Onboard VMs to Microsoft Defender for Endpoint
-
-### Overview
-Integrated virtual machines with Microsoft Defender for Endpoint to enhance security and threat protection.
-
-### Key Contributions
-- Researched VMs not currently empowerd with Microsoft Defender for Endpoint 
-- Worked with Product owners to assist in Onboarding the Defender solution.
-
-### Impact
-- Strengthened the organization’s defense against cyber threats.
-- Improved visibility and response capabilities regarding potential security incidents.
-
----
-
-## Conclusion
-
-Through these efforts, I have contributed to creating a robust security framework within Azure, ensuring compliance and safeguarding the organization's assets. Each section outlines specific contributions and their impact on overall security and compliance.
+Through my work in operations, I have contributed to the reliability, scalability, and cost-effectiveness of cloud environments. By combining technical expertise with a focus on automation and collaboration, I have helped ensure that cloud services run smoothly and support the business's evolving needs.
 
 ---
 
@@ -149,7 +63,9 @@ Through these efforts, I have contributed to creating a robust security framewor
 
 - **Email**: [bradleydlawson@outlook.com](mailto:bradleydlawson@outlook.com)
 - **LinkedIn**: [linkedin.com/in/brad-lawson](https://linkedin.com/in/brad-lawson)
+- **Portfolio**: [bradleylawson.github.io/Resume/](https://bradleylawson.github.io/Resume/)
 
+---
 
 
 ## **View More of My Work**

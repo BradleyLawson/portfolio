@@ -42,7 +42,9 @@ In all these efforts, I have demonstrated a commitment to teamwork and collabora
 
 - **Email**: [bradleydlawson@outlook.com](mailto:bradleydlawson@outlook.com)
 - **LinkedIn**: [linkedin.com/in/brad-lawson](https://linkedin.com/in/brad-lawson)
+- **Portfolio**: [bradleylawson.github.io/Resume/](https://bradleylawson.github.io/Resume/)
 
+---
 
 
 ## **View More of My Work**

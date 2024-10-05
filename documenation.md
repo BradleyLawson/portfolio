@@ -49,14 +49,15 @@ Documentation is a living entity that requires constant updates to stay relevant
 
 Through the creation and maintenance of technical documentation, I have contributed to building a knowledge base that empowers teams to operate efficiently and effectively within the cloud. My documentation efforts have not only improved operational processes but also fostered better communication and collaboration across the organization.
 
-
 ---
 
 ## Get in Touch
 
 - **Email**: [bradleydlawson@outlook.com](mailto:bradleydlawson@outlook.com)
 - **LinkedIn**: [linkedin.com/in/brad-lawson](https://linkedin.com/in/brad-lawson)
+- **Portfolio**: [bradleylawson.github.io/Resume/](https://bradleylawson.github.io/Resume/)
 
+---
 
 
 ## **View More of My Work**
