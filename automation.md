@@ -12,6 +12,8 @@ There were many ways we could have handled this. Logic Apps, Function Apps, and 
 
 ## Code
 
+- [Automation](./automation.ps1) 
+
 
 ## Conclusion
 
