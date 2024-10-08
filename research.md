@@ -1,75 +1,63 @@
 # **Research**
 
-Throughout my career as a Cloud Engineer, research has been a critical component in staying at the forefront of emerging technologies and implementing innovative solutions in cloud environments. I have dedicated significant time to investigating new tools, services, and practices to ensure that the cloud infrastructure I manage remains scalable, secure, and aligned with industry best practices.
+Understanding and optimizing the cloud environment requires ongoing research into existing services, applications, and resources. As part of my work, I conducted extensive research into our cloud infrastructure, identifying areas for improvement, ensuring security compliance, and planning necessary upgrades to meet business and operational requirements.
 
-## **Staying Ahead of Cloud Technology Trends**
+## **Overview of Research Focus**
 
-Researching and exploring new cloud technologies has enabled me to stay ahead in a fast-evolving industry. Whether it’s new cloud services, updated security protocols, or infrastructure automation tools, my research efforts have been driven by a commitment to continuous learning and improvement.
+The research I conducted was aimed at ensuring that the cloud environment was secure, efficient, and compliant with industry standards. This involved a thorough examination of existing services, applications, and resources to identify areas of risk and opportunities for improvement.
 
 ### Key Areas of Research:
-1. **Emerging Cloud Services**
-    - Investigated new Azure services and features to determine how they can be leveraged to improve cloud operations and security.
-    - Assessed the potential of services like Azure Functions, Logic Apps, and Kubernetes for streamlining workloads and building scalable solutions.
+1. **Inventory of Existing Services**
+    - Conducted a comprehensive audit of the services deployed in the cloud environment to assess their functionality, performance, and relevance to current business needs.
+    - Identified legacy services that were underperforming or outdated and made recommendations for upgrading or decommissioning them.
+  
+2. **Application Upgrade Requirements**
+    - Researched the need to upgrade critical applications to newer versions, evaluating factors such as performance, security, compatibility, and cost.
+    - Analyzed the best available versions of key applications and determined the effort required for migration, ensuring minimal disruption to business operations.
+  
+3. **Security Assessment**
+    - Identified insecure services and resources that posed potential vulnerabilities within the environment.
+    - Researched best practices for securing these services, recommending encryption, firewall rules, and access control improvements to safeguard sensitive data and systems.
+  
+4. **Non-Compliant Resources**
+    - Conducted research into cloud resources that were non-compliant with security and governance policies, such as missing required encryption or public IP exposure.
+    - Identified the necessary steps to bring these resources into compliance, including remediating policy violations and adjusting configurations.
 
-2. **Cloud Security Enhancements**
-    - Researched the latest security tools and best practices in the cloud to ensure that all infrastructure is protected against evolving threats.
-    - Explored advancements in cloud-native security tools such as Microsoft Defender for Cloud, Azure Security Center, and identity management solutions like Azure AD.
+## **Research into Service Upgrades and Application Modernization**
 
-3. **Infrastructure as Code (IaC) Innovations**
-    - Evaluated new versions and features of Infrastructure as Code (IaC) tools, particularly Terraform, to implement more efficient resource management practices.
-    - Explored new modules, templates, and approaches to automate infrastructure provisioning, reduce human errors, and improve deployment times.
+The goal of upgrading services and applications was to enhance performance, security, and scalability across the cloud environment. My research focused on evaluating the latest available versions of key services and identifying which upgrades would provide the most value.
 
-## **Benchmarking and Proof of Concepts (PoC)**
+### Key Findings:
+- **Outdated Versions of Applications**: Discovered that several critical applications were running outdated versions, which lacked security patches and modern features. Recommended upgrades that aligned with current business needs.
+- **Cloud-Native Service Opportunities**: Identified opportunities to replace legacy on-premises services with cloud-native solutions, reducing complexity and operational overhead.
+- **Upgrade Path Analysis**: Provided a detailed analysis of the upgrade paths for applications, including compatibility checks, risk assessment, and potential downtime.
 
-As part of my research, I have regularly conducted benchmarking exercises and Proof of Concepts (PoCs) to evaluate the viability of new technologies in real-world scenarios. This hands-on experimentation has allowed me to make informed recommendations for technology adoption.
+## **Security Research and Recommendations**
 
-### Examples of Research Activities:
-1. **Performance Benchmarking**
-    - Conducted performance benchmarking to compare different cloud services, focusing on factors like cost efficiency, scalability, and speed.
-    - Used data-driven insights to determine the best solutions for specific workloads and business needs.
+Ensuring the security of cloud resources is a priority, and my research focused on identifying areas where existing configurations were insecure or vulnerable to potential attacks.
 
-2. **Proof of Concepts (PoCs)**
-    - Designed and executed PoCs for new Azure services and third-party tools to evaluate their suitability in production environments.
-    - Documented findings and presented results to stakeholders, making recommendations for broader implementation or alternative solutions.
+### Key Findings:
+- **Insecure Services**: Flagged services that were publicly accessible without proper security measures, such as databases and storage accounts with public IP exposure.
+- **Recommended Security Enhancements**: Proposed security measures including network isolation, encryption of data at rest and in transit, and applying least privilege access controls.
+- **Security Auditing Tools**: Researched and recommended tools to automate the continuous auditing of security configurations, ensuring compliance and reducing manual overhead.
 
-## **Continuous Learning and Certification**
+## **Non-Compliance and Governance Research**
 
-Research also involves formal learning through certifications, webinars, and industry publications. By committing to continuous education, I have gained a deeper understanding of cloud architecture, security frameworks, and DevOps practices.
+Maintaining compliance with organizational and industry standards is critical. My research into non-compliant resources helped to identify gaps in the environment and provided actionable steps to achieve compliance.
 
-### Certifications and Learning Initiatives:
-- **Microsoft Azure Certifications**: Achieved certifications that deepen my expertise in Azure services, architecture, and security.
-- **Industry Webinars and Workshops**: Regularly attended cloud-focused webinars and workshops to stay informed on the latest trends and best practices.
-- **Technical Blogs and White Papers**: Reviewed industry white papers and blogs to stay informed on emerging tools and practices, and applied relevant findings to ongoing projects.
+### Key Findings:
+- **Non-Compliant Resources**: Found resources that lacked required tagging, encryption, or backup policies, resulting in potential governance violations.
+- **Compliance Roadmap**: Developed a roadmap for bringing resources back into compliance, including updating Azure Policies, implementing automated remediation scripts, and conducting regular compliance reviews.
 
-## **Collaborative Research**
+## **Recommendations for Environmental Changes**
 
-Research is often a team effort, and I have worked with peers and stakeholders to explore new technologies and solutions. By fostering collaborative research environments, I have been able to gain diverse perspectives and improve the depth of analysis.
+Based on my research, I provided several recommendations for optimizing and securing the cloud environment, ensuring that it met current and future business needs.
 
-### Collaboration Highlights:
-- **Internal Teams**: Collaborated with development, security, and operations teams to jointly explore and evaluate new cloud tools and services.
-- **Cross-Departmental Research**: Partnered with different departments, such as finance and compliance, to assess the cost implications, regulatory impact, and risk factors of adopting new technologies.
+### Key Recommendations:
+- **Application and Service Upgrades**: Prioritized a list of critical applications and services that required upgrades, along with timelines and potential impacts.
+- **Security Enhancements**: Proposed improvements to network security, identity and access management (IAM), and encryption standards to mitigate risk.
+- **Compliance Automation**: Recommended automating compliance checks and remediation using tools like Azure Policy and Terraform to maintain governance standards with minimal manual intervention.
 
 ## **Conclusion**
 
-Research has been pivotal in driving innovation within my cloud engineering work. By staying informed on the latest advancements, testing new tools, and collaborating with others, I have been able to bring cutting-edge solutions to the organizations I work with, ensuring they stay competitive and secure in a rapidly changing cloud landscape.
-
----
-
-## Get in Touch
-
-- **Email**: [bradleydlawson@outlook.com](mailto:bradleydlawson@outlook.com)
-- **LinkedIn**: [linkedin.com/in/brad-lawson](https://linkedin.com/in/brad-lawson)
-- **Portfolio**: [bradleylawson.github.io/Resume/](https://bradleylawson.github.io/Resume/)
-
----
-
-
-## **View More of My Work**
-
-[![Go to Automation](https://img.shields.io/badge/Automation-blue?style=for-the-badge)](./automation.md) &nbsp;
-[![Go to Collaboration](https://img.shields.io/badge/Collaboration-green?style=for-the-badge)](./collaboration.md) &nbsp;
-[![Go to Documentation](https://img.shields.io/badge/Documentation-orange?style=for-the-badge)](./documentation.md) &nbsp;
-[![Go to Operations](https://img.shields.io/badge/Operations-purple?style=for-the-badge)](./operations.md) &nbsp;
-[![Go to Security](https://img.shields.io/badge/Security-black?style=for-the-badge)](./security.md) &nbsp;
-[![Go to Tagging](https://img.shields.io/badge/Tagging-yellow?style=for-the-badge)](./tagging.md) &nbsp;
-[![Go to Troubleshooting](https://img.shields.io/badge/Troubleshooting-pink?style=for-the-badge)](./troubleshooting.md)
+Through thorough research and analysis, I identified key areas of improvement within the cloud environment, ensuring that the infrastructure remained secure, compliant, and up to date. My research enabled the organization to make informed decisions about upgrading services, improving security, and achieving compliance, ultimately leading to a more efficient and resilient cloud environment.
